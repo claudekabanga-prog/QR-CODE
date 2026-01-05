@@ -1,0 +1,91 @@
+ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#3b7a6e;
+    color: #fff;
+
+}
+.wrapper {
+    background-color: #0a0a0a;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 500px;
+    max-width: 500px;
+    text-align: center;
+}
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.2);  
+}
+input , button , #download {
+    padding: 15px;
+    outline: none;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    color: #fff;
+    margin-top: 10px;
+}
+
+button , #download {
+    background-color: #4aff87;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover , #download:hover{
+    background-color: #8ff5b1;
+}
+
+.result {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.result.active {
+    display: flex;
+}
+
+#qrcode {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    border: 2px solid rgba(255, 255, 255, 0.2);  
+    border-radius: 30px;
+}
+
+#download {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 100%;
+}
